@@ -5,6 +5,7 @@
 	<title>Hexagon World: Editeur de niveaux</title>
 	<link rel="stylesheet" href="libs/bootstrap-3.2.0-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<script src="libs/jquery-2.1.1.min.js"></script>
@@ -12,11 +13,12 @@
 	<script src="libs/angular.min.js"></script>
 	<script src="libs/angular-route.min.js"></script>
 	<script src="scripts/main.js"></script>
-
+	<script src="scripts/controllers/arenas/arenas.js"></script>
+	<script src="scripts/controllers/arenas/tiles.js"></script>
 </head>
 
 <body ng-app="hexagonWorldEditor">
-	<div class="container-fluid">
+	<div class="container">
 		<ng-include src="'views/menu.html'"></ng-include>
 		<ng-view></ng-view>
 	</div>

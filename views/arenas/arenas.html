@@ -1,1 +1,11 @@
-Ceci est un éditeur d'arène
+<div class="row">
+	<ul class="nav nav-tabs" role="tablist">
+		<li ng-class="{active: selectedTab == 'arenas'}"><a href="#/arenas/arenas">Arènes</a>
+		</li>
+		<li ng-class="{active: selectedTab == 'tiles'}"><a href="#/arenas/tiles">Tuiles</a>
+		</li>
+	</ul>
+</div>
+<div class="hx-view">
+	<ng-include src="'views/arenas/arenas_'+selectedTab+'.html'"></ng-include>
+</div>
