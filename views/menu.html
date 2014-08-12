@@ -1,6 +1,42 @@
+<nav class="navbar navbar-default" id="view-menu" role="navigation" ng-controller="MenuController as menu">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			{{$route}}
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Hexagon World Editor</a>
+		</div>
 
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li ng-class="active: true"><a href="#">Arenes</a>
+				</li>
+				<li><a href="#">Personnages</a>
+				</li>
+				<li><a href="#">Unités</a>
+				</li>
+				<li><a href="#">Tableaux</a>
+				</li>
+				<li><a href="#">Niveaux</a>
+				</li>
+			</ul>
 
+			<ul class="nav navbar-nav navbar-right">
+				<form class="navbar-form">
+					<button type="button" class="btn btn-default">Rafraichir</button>
+					<button type="button" class="btn btn-default">Sauvegarder</button>
+					<button type="button" class="btn btn-primary">Publier</button>
+				</form>
 
-<script>
-	addSelf("menu")
-</script>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>
