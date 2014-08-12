@@ -2,24 +2,64 @@
 <html>
 
 <head>
-	<title>Hexagon World: Editeur de niveaux</title>
-	<link rel="stylesheet" href="libs/bootstrap-3.2.0-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="libs/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css">
-	<script src="libs/jquery-2.1.1.min.js"></script>
-	<script src="libs/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-	<script src="libs/angular.min.js"></script>
-	<script src="libs/angular-route.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
+    <title>Hexagon World: Editeur de niveaux</title>
+    <link rel="stylesheet" href="libs/bootstrap-3.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css">
+    <script src="libs/jquery-2.1.1.min.js"></script>
+    <script src="libs/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
 
-	<script src="scripts/utils/importSystem.js"></script>
-	<link rel="import" href="/views/menu.html">
+    <script src="scripts/utils/importSystem.js"></script>
+    <link rel="import" href="views/menu.html">
 </head>
 
 <body ng-app>
-	<div class="container-fluid">
-		<hexagon-view id="menu"></hexagon-view>
-	</div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default" id="view-menu" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Hexagon World Editor</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Arenes</a>
+                        </li>
+                        <li><a href="#">Personnages</a>
+                        </li>
+                        <li><a href="#">Unités</a>
+                        </li>
+                        <li><a href="#">Tableaux</a>
+                        </li>
+                        <li><a href="#">Niveaux</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <form class="navbar-form">
+                            <button type="button" class="btn btn-default">Rafraichir</button>
+                            <button type="button" class="btn btn-default">Sauvegarder</button>
+                            <button type="button" class="btn btn-primary">Publier</button>
+                        </form>
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
 </body>
 
 </html>
