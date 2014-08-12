@@ -2,7 +2,6 @@
 	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			{{$route}}
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
@@ -15,15 +14,15 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li ng-class="active: true"><a href="#">Arenes</a>
+				<li ng-class="{active: routeIs('arenas')}"><a href="#arenas">Arenes</a>
 				</li>
-				<li><a href="#">Personnages</a>
+				<li ng-class="{active: routeIs('characters')}"><a href="#characters">Personnages</a>
 				</li>
-				<li><a href="#">Unités</a>
+				<li ng-class="{active: routeIs('units')}"><a href="#units">Unités</a>
 				</li>
-				<li><a href="#">Tableaux</a>
+				<li ng-class="{active: routeIs('stages')}"><a href="#stages">Tableaux</a>
 				</li>
-				<li><a href="#">Niveaux</a>
+				<li ng-class="{active: routeIs('levels')}"><a href="#levels">Niveaux</a>
 				</li>
 			</ul>
 
